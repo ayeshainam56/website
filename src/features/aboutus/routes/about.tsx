@@ -127,29 +127,43 @@ export default function AboutUs() {
 </div>
 
 
-
-
-<div className="relative flex flex-col justify-center items-center w-full p-2 mt-10 sm:flex-row sm:justify-center sm:items-center sm:mr-[40%]">
-    {/* Image Section */}
-    <div className="w-[300px] h-[430px] sm:w-[500px] sm:h-[400px] relative sm:z-20 z-10">
+<div className="relative w-full flex flex-col items-center sm:mt-10 lg:flex-row lg:justify-center lg:items-center lg:mr-[40%] p-4">
+  {/* Image Section */}
+  <div className="w-[90%] max-w-[500px] h-[430px] sm:h-[400px] relative z-20">
     <img 
-        src={abouttech} 
-        alt="Founder" 
-        className="relative object-cover w-full h-full rounded-xl" 
+      src={abouttech} 
+      alt="Founder" 
+      className="object-cover w-full h-full rounded-xl" 
     />
+  </div>
+
+  {/* Text Box Section for Mobile/Tablet: stacked below image */}
+  <div className="block lg:hidden w-[90%] bg-blue-800 text-white mt-6 p-6 rounded-lg">
+    <h3 className="text-2xl font-semibold mb-4">Founder & Managing Attorney</h3>
+    <p className="text-base leading-relaxed">
+      Malik Waqar, LL.M. ’15, graduated from Temple University after overcoming hardship as a 
+      refugee from Pakistan at age 13. He began his legal journey at the non-profit Prime – ECR, 
+      where he managed a heavy caseload early in his career. After four years in non-profit pro
+      bono work, he launched his own firm. Today, he remains undefeated in immigration proceedings 
+      before the Board of Immigration Appeals and Philadelphia courts, driven by a strong commitment 
+      to helping those in need.
+    </p>
+  </div>
+
+  {/* Text Box Section for Desktop: overlapping on right side */}
+  <div className="hidden lg:block absolute bg-blue-800 text-white p-9 rounded-lg w-[660px] h-[320px] left-[80%] transform -translate-x-[27%] z-10">
+    <h3 className="text-2xl font-semibold mb-4 ml-20">Founder & Managing Attorney</h3>
+    <p className="text-base ml-20 leading-relaxed">
+      Malik Waqar, LL.M. ’15, graduated from Temple University after overcoming hardship as a 
+      refugee from Pakistan at age 13. He began his legal journey at the non-profit Prime – ECR, 
+      where he managed a heavy caseload early in his career. After four years in non-profit pro
+      bono work, he launched his own firm. Today, he remains undefeated in immigration proceedings 
+      before the Board of Immigration Appeals and Philadelphia courts, driven by a strong commitment 
+      to helping those in need.
+    </p>
+  </div>
 </div>
 
-
-    {/* Text Box Section */}
-    <div className="relative bg-blue-800 p-6 rounded-lg w-[90%] h-[300px] mt-[-50px] z-20 sm:w-[660px] sm:mt-0 sm:absolute sm:left-[80%] sm:transform sm:-translate-x-[27%] sm:p-9 sm:z-10">
-        <h3 className="text-2xl font-semibold text-white mb-4 ml-4 sm:ml-20">Founder & Managing Attorney</h3>
-        <p className="text-base text-white ml-4 sm:ml-20">
-            Malik Waqar, LL.M. ’15 graduate from Temple University, overcame hardship after fleeing Pakistan at age 13.  
-            He built his legal career on perseverance and passion — first working four years in non‑profit pro bono roles before launching his own firm.  
-            Today, he remains undefeated in immigration proceedings before the Board of Immigration Appeals and Philadelphia courts, driven by his instinct to help clients in need.
-        </p>
-    </div>
-</div>
 
 
 
