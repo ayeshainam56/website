@@ -3,9 +3,9 @@ import contactImage from "../../../assets/images/contactus.jpg"; // Replace this
 import { Button } from "../../../../libs/lib-vt-performance-ui/index.ts";
 import emailjs from "emailjs-com";
 
-const SERVICE_ID = "service_t4xqjwc";
-const TEMPLATE_ID = "template_mpbfgz3";
-const PUBLIC_KEY = "der9Vqm3gCJrzexe2";
+const SERVICE_ID = "service_ds3hauq";
+const TEMPLATE_ID = "template_fgwk1zh";
+const PUBLIC_KEY = "FEknXuELhly3f4ZK5";
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });

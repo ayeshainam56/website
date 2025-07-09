@@ -10,6 +10,20 @@ import aboutarrow from "../../../assets/images/aboutarrow.svg";
 import abouttrophy from "../../../assets/images/abouttrpohy.svg";
 import abouttech from "../../../assets/images/waqar.png";
 import teamImage from "../../../assets/images/teamImage.svg";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import award1 from '../../../assets/images/client-1.png';
+import award2 from '../../../assets/images/client-2.png';
+import award3 from '../../../assets/images/client-3.png';
+import award4 from '../../../assets/images/client-4.png';
+import award5 from '../../../assets/images/client-5.png';
+import award6 from '../../../assets/images/client-6.png';
+import award7 from '../../../assets/images/client-7.png';
+import award8 from '../../../assets/images/client-8.png';
+
+const awardImages = [award1, award2, award3, award4, award5, award6, award7, award8];
+
+
 export default function AboutUs() {
     return (
         //about main
@@ -168,73 +182,132 @@ export default function AboutUs() {
 
 
 
-
-
-
-
-
-
-
-
 {/* Team section */}
-<div className="flex flex-col w-full p-2 mt-10 relative"style={{ marginLeft:'15%' }}>
-<div className="flex items-center mb-8">
-    <h2 className="text-2xl font-bold mb-6">Team</h2>
-    <div className="ml-4 bg-blue-800" style={{ width: '569px', height: '7px', borderRadius: '10px 0 0 0', marginLeft:'40%', marginBottom: '2.5%'}}></div>
-</div>
+<div className="w-full px-4 sm:px-8 lg:px-16 py-10 bg-gradient-to-b from-blue-50 to-white">
+  {/* Section Heading */}
+  <div className="mb-12 text-center">
+    <h2 className="text-3xl font-bold text-blue-900 mb-2">Team</h2>
+    <div className="w-24 h-1 bg-blue-800 mx-auto rounded-lg"></div>
+  </div>
+
+  {/* Team Members Grid */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+    {[
+      {
+        name: "SHI HAULI",
+        title: "Associate Attorney",
+        image: teamImage,
+        email: "ranahuba0@gmail.com",
+        linkedin: "https://www.linkedin.com/in/huba-rana/"
+      },
+
+      {
+        name: "Amber Munoz",
+        title: "Legal Assistant",
+        image: teamImage,
+        email: "ranahuba0@gmail.com",
+        linkedin: "https://www.linkedin.com/in/huba-rana/"
+      },
       
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">
-  <div className="flex items-center bg-white shadow-lg rounded-lg p-4" style={{ width: '553px', height: '164px' }}>
-  <img src={teamImage} alt="Jordan Thompson" className="w-32 h-32 object-cover" />
-  <div className="ml-4 flex flex-col justify-center">
-    <h3 className="text-xl font-semibold">Aqeel Ahmad Shah</h3>
-    <p className="text-gray-500">Manager</p>
-    <div className="flex mt-2 space-x-6">
-      <a href="#" className="py-3 px-4 bg-blue-50 rounded-md"><i className="fab fa-twitter text-gray-600 text-lg"></i></a>
-      <a href="#" className="py-3 px-4 bg-blue-50 rounded-md"><i className="fab fa-linkedin text-gray-600 text-lg"></i></a>
-    </div>
+      {
+        name: "Aqeel Ahmad Shah",
+        title: "Manager",
+        image: teamImage,
+        email: "aqeelshah450@gmail.com",
+        linkedin: "https://linkedin.com/in/aqeel-shah"
+      },
+      {
+        name: "Ahmad Jamal Abbasi",
+        title: "Legal Associate",
+        image: teamImage,
+        email: "Ahmadjamalabbasi@gmail.com",
+        linkedin: "https://www.linkedin.com/in/ahmad-j-abbasi-3127ab169?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+      },
+      {
+        name: "Ayesha Inam",
+        title: "Legal Assistant & Technical Advisor",
+        image: teamImage,
+        email: "ayeshainam232@gmail.com",
+        linkedin: "https://www.linkedin.com/in/ayesha-inam-7677a3200/"
+      },
+      {
+        name: "Amber Naz",
+        title: "Legal Assistant",
+        image: teamImage,
+        email: "amber@example.com",
+        linkedin: "https://linkedin.com/in/amber"
+      },
+      {
+        name: "Huba Rana",
+        title: "Legal Assistant",
+        image: teamImage,
+        email: "ranahuba0@gmail.com",
+        linkedin: "https://www.linkedin.com/in/huba-rana/"
+      },
+
+      
+      
+    ].map((member, index) => (
+      <div
+        key={index}
+        className="bg-white shadow-lg rounded-xl p-6 w-full max-w-sm flex flex-col items-center text-center"
+      >
+        <img
+          src={member.image}
+          alt={member.name}
+          className="w-32 h-32 object-cover rounded-full mb-4"
+        />
+        <h3 className="text-xl font-semibold text-blue-900">{member.name}</h3>
+        <p className="text-gray-500">{member.title}</p>
+        <div className="flex mt-4 gap-4">
+          <a href={`mailto:${member.email}`} className="p-2 bg-blue-50 rounded-full" title="Email">
+            <i className="fas fa-envelope text-blue-600 text-lg"></i>
+          </a>
+          <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="p-2 bg-blue-50 rounded-full" title="LinkedIn">
+            <i className="fab fa-linkedin text-blue-600 text-lg"></i>
+          </a>
+        </div>
+      </div>
+    ))}
   </div>
 </div>
 
-<div className="flex items-left bg-white shadow-lg rounded-lg p-4 md:ml-[40%]" style={{ width: '553px', height: '164px' }}>
-  <img src={teamImage} alt="Jordan Thompson" className="w-32 h-32 object-cover " />
-  <div className="ml-4 flex flex-col justify-center">
-    <h3 className="text-xl font-semibold">Ayesha Inam</h3>
-    <p className="text-gray-500">Technical Advisor</p>
-    <div className="flex mt-2 space-x-6">
-      <a href="#" className="py-3 px-4 bg-blue-50 rounded-md"><i className="fab fa-twitter text-gray-600 text-lg"></i></a>
-      <a href="#" className="py-3 px-4 bg-blue-50 rounded-md"><i className="fab fa-linkedin text-gray-600 text-lg"></i></a>
-    </div>
+
+
+
+
+{/* Honors and Awards Section */}
+<div className="w-full py-20 bg-gradient-to-b from-blue-50 to-white flex flex-col items-center">
+  <h2 className="text-3xl font-bold text-blue-900 mb-8 text-center uppercase tracking-wide">Honors & Awards</h2>
+  <div className="w-full max-w-7xl px-4 sm:px-8">
+    <Swiper
+      modules={[Autoplay]}
+      autoplay={{ delay: 3500, disableOnInteraction: false }}
+      loop={true}
+      speed={1000}
+      grabCursor={true}
+      breakpoints={{
+        0: { slidesPerView: 2, spaceBetween: 20 },
+        640: { slidesPerView: 3, spaceBetween: 30 },
+        1024: { slidesPerView: 6, spaceBetween: 40 }
+      }}
+    >
+      {awardImages.map((img, index) => (
+        <SwiperSlide key={index} className="flex justify-center">
+          <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <img
+              src={img}
+              alt={`award-${index + 1}`}
+              className="h-16 sm:h-20 object-contain mx-auto"
+              loading="lazy"
+            />
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
   </div>
 </div>
-</div>
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl mt-10">
-
-<div className="flex items-center bg-white shadow-lg rounded-lg p-4" style={{ width: '553px', height: '164px' }}>
-<img src={teamImage} alt="Jordan Thompson" className="w-32 h-32 object-cover" />
-<div className="ml-4 flex flex-col justify-center">
-  <h3 className="text-xl font-semibold">Amber</h3>
-  <p className="text-gray-500">Legal Assistant</p>
-  <div className="flex mt-2 space-x-6">
-      <a href="#" className="py-3 px-4 bg-blue-50 rounded-md"><i className="fab fa-twitter text-gray-600 text-lg"></i></a>
-      <a href="#" className="py-3 px-4 bg-blue-50 rounded-md"><i className="fab fa-linkedin text-gray-600 text-lg"></i></a>
-    </div>
-</div>
-</div>
-<div className="flex items-left bg-white shadow-lg rounded-lg p-4 md:ml-[40%]" style={{ width: '553px', height: '164px' }}>
-<img src={teamImage} alt="Jordan Thompson" className="w-32 h-32 object-cover " />
-<div className="ml-4 flex flex-col justify-center">
-  <h3 className="text-xl font-semibold">Huba Rana</h3>
-  <p className="text-gray-500">Legal Assistant</p>
-  <div className="flex mt-2 space-x-6">
-      <a href="#" className="py-3 px-4 bg-blue-50 rounded-md"><i className="fab fa-twitter text-gray-600 text-lg"></i></a>
-      <a href="#" className="py-3 px-4 bg-blue-50 rounded-md"><i className="fab fa-linkedin text-gray-600 text-lg"></i></a>
-    </div>
-</div>
-</div>
-</div> 
-</div>
 
 
 
