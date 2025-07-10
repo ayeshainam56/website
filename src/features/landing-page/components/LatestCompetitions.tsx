@@ -51,18 +51,18 @@ export default function PracticeAreas() {
             {[
                 {
                 quote:
-                    "All the great things are simple, and many can be expressed in a single word: freedom, justice, honor, duty, mercy, hope.",
-                author: "Winston Churchill",
+                    "Those who disbelieve in the signs of Allah and kill the prophets without right and kill those who order justice from among the people - give them tidings of a painful punishment.",
+                author: "Surah Al-Imran Ayat 21",
                 },
                 {
                 quote:
-                    "The most numerous objects of legislation belong to the States. Those of the National Legislature [are] but few.",
-                author: "Rufus King",
+                    "Indeed, Allah commands you to render trusts to whom they are due and when you judge between people to judge with justice. Excellent is that which Allah instructs you. Indeed, Allah is ever Hearing and Seeing.",
+                author: "Surah An-Nisa Ayat 58",
                 },
                 {
                 quote:
-                    "Law is nothing other than a certain ordinance of reason for the common good, promulgated by the person who has the care of the community.",
-                author: "Thomas Aquinas",
+                    "O you who have believed, be persistently standing firm in justice, witnesses for Allah, even if it be against yourselves or parents and relatives.",
+                author: "Surah An-Nisa Ayat 135",
                 },
             ].map((item, index) => (
                 <SwiperSlide key={index}>
