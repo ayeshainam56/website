@@ -37,17 +37,32 @@ const ContactUs = () => {
     return (
         <div className="w-full px-6 py-12 bg-[#f7f9fc] text-[#1a1a1a]">
             {/* Top Section with Contact & Hours */}
-            <div className="flex flex-col md:flex-row justify-around items-center gap-8 bg-[rgba(184,164,135,0.9)] text-black rounded-2xl p-8 mb-12">
-                <div className="flex flex-col items-center gap-3">
-                    <h3 className="text-xl font-bold">📞 Contact</h3>
-                    <p className="text-lg">Office: (223) 529-8055</p>
-                </div>
-                <div className="flex flex-col items-center gap-3">
-                    <h3 className="text-xl font-bold">⏰ Hours</h3>
-                    <p>Monday - Friday: 9:00 AM – 5:00 PM</p>
-                    <p>Saturday - Sunday: Closed</p>
-                </div>
+           <div className="flex flex-col md:flex-row justify-around items-center gap-8 bg-[rgba(184,164,135,0.9)] text-black rounded-2xl p-8 mb-12">
+            {/* Location */}
+            <div className="flex flex-col items-center gap-3 text-center">
+                <h3 className="text-xl font-bold">📍 Location</h3>
+                <p className="text-lg font-semibold">Main Office:</p>
+                <p>255 Butler Ave Ste 204, Lancaster, PA 17601</p>
+                <p className="text-lg font-semibold mt-2">By Appointment Only:</p>
+                <p>140 N Lansdowne Ave, Lansdowne, PA 19050</p>
             </div>
+
+            {/* Contact */}
+            <div className="flex flex-col items-center gap-3 text-center">
+                <h3 className="text-xl font-bold">📞 Contact</h3>
+                <p className="text-lg">Office: (223) 529-8055</p>
+                <p>Email: <a href="mailto:malikassociatesllc6@gmail.com" className="underline hover:text-blue-800">malikassociatesllc6@gmail.com</a></p>
+                <p className="text-sm mt-2 italic">Feel free to reach out via phone or email.</p>
+            </div>
+
+            {/* Hours */}
+            <div className="flex flex-col items-center gap-3 text-center">
+                <h3 className="text-xl font-bold">⏰ Hours</h3>
+                <p>Monday - Friday: 9:00 AM – 5:00 PM</p>
+                <p>Saturday - Sunday: Closed</p>
+            </div>
+            </div>
+
 
             <div className="mt-20 mb-20">
                 <h3 className="text-2xl font-bold text-center text-[#002244] mb-4">📍 Our Location</h3>
