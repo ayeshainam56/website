@@ -96,7 +96,8 @@ export default function PracticeAreas() {
     const navigate = useNavigate();
 
     return (
-        <div className="w-full bg-white py-16 px-6 sm:px-10 lg:px-20 text-[#1a1a1a]">
+        <div className="w-full bg-white py-16 px-6 sm:px-10 lg:px-20 text-[#1a1a1a] mt-[-50px]">
+
             {/* Header */}
             <div className="max-w-7xl mx-auto text-center mb-16">
                 <h1 className="text-4xl lg:text-5xl font-bold text-blue-900">Our Practice Areas</h1>

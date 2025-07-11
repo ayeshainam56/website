@@ -32,7 +32,7 @@ export default function FAQ() {
     };
 
     return (
-        <div className="w-full px-4 py-12 lg:py-20 bg-gray-50 dark:bg-gray-900">
+        <div className="w-full px-4 py-12 lg:py-20 bg-gray-50 dark:bg-gray-900 mt-[-40px]">
             <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-center">
                 {/* Image */}
                 <div className="w-full lg:w-1/2 flex justify-center">
