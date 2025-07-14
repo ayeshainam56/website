@@ -8,7 +8,7 @@ import bgdark from "../../../assets/images/bg-doodles-dark.svg";
 import aboutproblem from "../../../assets/images/justice.png";
 import aboutarrow from "../../../assets/images/aboutarrow.svg";
 import abouttrophy from "../../../assets/images/abouttrpohy.svg";
-import abouttech from "../../../assets/images/waqar.png";
+import abouttech from "../../../assets/images/waqar.jpg";
 import teamImage from "../../../assets/images/teamImage.svg";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
@@ -20,6 +20,9 @@ import award5 from '../../../assets/images/client-5.png';
 import award6 from '../../../assets/images/client-6.png';
 import award7 from '../../../assets/images/client-7.png';
 import award8 from '../../../assets/images/client-8.png';
+import shihauli from "../../../assets//images/hauli.jpg";
+import ambermunoz from "../../../assets/images/amber.jpg";
+
 
 const awardImages = [award1, award2, award3, award4, award5, award6, award7, award8];
 
@@ -141,40 +144,190 @@ export default function AboutUs() {
 </div>
 
 
-<div className="relative w-full flex flex-col items-center sm:mt-10 lg:flex-row lg:justify-center lg:items-center lg:mr-[40%] p-4">
-  {/* Image Section */}
-  <div className="w-[90%] max-w-[500px] h-[430px] sm:h-[400px] relative z-20">
-    <img 
-      src={abouttech} 
-      alt="Founder" 
-      className="object-cover w-full h-full rounded-xl" 
-    />
-  </div>
+<div className="w-full bg-gradient-to-b from-blue-50 to-white py-20 px-6 sm:px-10 lg:px-24 text-[#1a1a1a]">
+  <div className="max-w-7xl mx-auto">
+    {/* Section Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 relative inline-block">
+        Meet Our Management
+        <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-blue-600 rounded-full"></span>
+      </h2>
+      <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        Our dedicated team of legal professionals brings diverse expertise and unwavering commitment to your case.
+      </p>
+    </div>
 
-  {/* Text Box Section for Mobile/Tablet: stacked below image */}
-  <div className="block lg:hidden w-[90%] bg-blue-800 text-white mt-6 p-6 rounded-lg">
-    <h3 className="text-2xl font-semibold mb-4">Founder & Managing Attorney</h3>
-    <p className="text-base leading-relaxed">
-      Malik Waqar, LL.M. ’15, graduated from Temple University after overcoming hardship as a 
-      refugee from Pakistan at age 13. He began his legal journey at the non-profit Prime – ECR, 
-      where he managed a heavy caseload early in his career. After four years in non-profit pro
-      bono work, he launched his own firm. Today, he remains undefeated in immigration proceedings 
-      before the Board of Immigration Appeals and Philadelphia courts, driven by a strong commitment 
-      to helping those in need.
-    </p>
-  </div>
+    {/* Team Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Malik Waqar */}
+      <div 
+        className="group relative bg-white border border-blue-100 rounded-2xl p-6 shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <div className="overflow-hidden rounded-xl mb-6">
+          <img 
+            src={abouttech} 
+            alt="Malik Waqar, Founder & Managing Attorney" 
+            className="w-full h-80 object-top object-cover rounded-xl transition-transform duration-500 group-hover:scale-105" 
+          />
+        </div>
+        
+        <div className="flex items-start justify-between mb-4">
+          <div>
+            <h3 className="text-2xl font-bold text-blue-900">Malik Waqar</h3>
+            <p className="text-sm text-blue-600 font-medium">Founder & Managing Attorney</p>
+          </div>
+          <div className="flex space-x-2">
+            <a 
+              href="mailto:malik@maliklaw.com" 
+              className="p-2 bg-blue-100 rounded-full hover:bg-blue-200 transition-colors duration-200"
+              aria-label="Email Malik Waqar"
+            >
+              <i className="fas fa-envelope text-blue-700 text-lg"></i>
+            </a>
+            <a 
+              href="#" 
+              className="p-2 bg-blue-100 rounded-full hover:bg-blue-200 transition-colors duration-200"
+              aria-label="Malik Waqar's LinkedIn"
+            >
+              <i className="fab fa-linkedin-in text-blue-700 text-lg"></i>
+            </a>
+          </div>
+        </div>
 
-  {/* Text Box Section for Desktop: overlapping on right side */}
-  <div className="hidden lg:block absolute bg-blue-800 text-white p-9 rounded-lg w-[660px] h-[320px] left-[80%] transform -translate-x-[27%] z-10">
-    <h3 className="text-2xl font-semibold mb-4 ml-20">Founder & Managing Attorney</h3>
-    <p className="text-base ml-20 leading-relaxed">
-      Malik Waqar, LL.M. ’15, graduated from Temple University after overcoming hardship as a 
-      refugee from Pakistan at age 13. He began his legal journey at the non-profit Prime – ECR, 
-      where he managed a heavy caseload early in his career. After four years in non-profit pro
-      bono work, he launched his own firm. Today, he remains undefeated in immigration proceedings 
-      before the Board of Immigration Appeals and Philadelphia courts, driven by a strong commitment 
-      to helping those in need.
-    </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Malik Waqar, LL.M. '15, graduated from Temple University after overcoming hardship as a 
+          refugee from Pakistan at age 13. He began his legal journey at the non-profit Prime – ECR.
+        </p>
+        
+        <div className="pt-4 border-t border-blue-50">
+          <h4 className="text-sm font-semibold text-blue-900 mb-2">Key Achievements:</h4>
+          <ul className="text-xs text-gray-600 space-y-1">
+            <li className="flex items-start">
+              <i className="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+              <span>Undefeated in immigration proceedings before BIA</span>
+            </li>
+            <li className="flex items-start">
+              <i className="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+              <span>15+ years of non-profit legal advocacy</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Shi Hauli */}
+      <div 
+        className="group relative bg-white border border-blue-100 rounded-2xl p-6 shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div className="overflow-hidden rounded-xl mb-6">
+          <img 
+            src={shihauli} 
+            alt="Shi Hauli, Partner" 
+            className="w-full h-80 object-cover rounded-xl transition-transform duration-500 group-hover:scale-105" 
+          />
+        </div>
+        
+        <div className="flex items-start justify-between mb-4">
+          <div>
+            <h3 className="text-2xl font-bold text-blue-900">Shi Hauli</h3>
+            <p className="text-sm text-blue-600 font-medium">Partner</p>
+          </div>
+          <div className="flex space-x-2">
+            <a 
+              href="mailto:shi@maliklaw.com" 
+              className="p-2 bg-blue-100 rounded-full hover:bg-blue-200 transition-colors duration-200"
+              aria-label="Email Shi Hauli"
+            >
+              <i className="fas fa-envelope text-blue-700 text-lg"></i>
+            </a>
+            <a 
+              href="#" 
+              className="p-2 bg-blue-100 rounded-full hover:bg-blue-200 transition-colors duration-200"
+              aria-label="Shi Hauli's LinkedIn"
+            >
+              <i className="fab fa-linkedin-in text-blue-700 text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Huali Shi is an Associate Attorney at Malik & Associates LLC. He graduated from Temple 
+          University School of Law and has over 8 years of experience in Employment and Business 
+          Immigration Law.
+        </p>
+        
+        <div className="pt-4 border-t border-blue-50">
+          <h4 className="text-sm font-semibold text-blue-900 mb-2">Areas of Expertise:</h4>
+          <div className="flex flex-wrap gap-2">
+            <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">Business Immigration</span>
+            <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">Private Equity</span>
+            <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">Chinese-English</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Amber Munoz */}
+      <div 
+        className="group relative bg-white border border-blue-100 rounded-2xl p-6 shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <div className="overflow-hidden rounded-xl mb-6">
+          <img 
+            src={ambermunoz} 
+            alt="Amber Munoz, Senior Manager & Paralegal Attorney" 
+            className="w-full h-80 object-cover rounded-xl transition-transform duration-500 group-hover:scale-105" 
+          />
+        </div>
+        
+        <div className="flex items-start justify-between mb-4">
+          <div>
+            <h3 className="text-2xl font-bold text-blue-900">Amber Munoz</h3>
+            <p className="text-sm text-blue-600 font-medium">Senior Manager & Paralegal Attorney</p>
+          </div>
+          <div className="flex space-x-2">
+            <a 
+              href="mailto:amber@maliklaw.com" 
+              className="p-2 bg-blue-100 rounded-full hover:bg-blue-200 transition-colors duration-200"
+              aria-label="Email Amber Munoz"
+            >
+              <i className="fas fa-envelope text-blue-700 text-lg"></i>
+            </a>
+            <a 
+              href="#" 
+              className="p-2 bg-blue-100 rounded-full hover:bg-blue-200 transition-colors duration-200"
+              aria-label="Amber Munoz's LinkedIn"
+            >
+              <i className="fab fa-linkedin-in text-blue-700 text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Amber Munoz, our Senior Paralegal, was born in Santo Domingo East, Dominican Republic, 
+          and moved to the U.S. in 2001. With over a decade of experience in family and immigration law.
+        </p>
+        
+        <div className="pt-4 border-t border-blue-50">
+          <h4 className="text-sm font-semibold text-blue-900 mb-2">Community Involvement:</h4>
+          <ul className="text-xs text-gray-600 space-y-1">
+            <li className="flex items-start">
+              <i className="fas fa-hands-helping text-blue-500 mt-1 mr-2"></i>
+              <span>Citizenship class instructor</span>
+            </li>
+            <li className="flex items-start">
+              <i className="fas fa-gavel text-blue-500 mt-1 mr-2"></i>
+              <span>Philadelphia Association of Paralegals (2017-present)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
   </div>
 </div>
 
@@ -182,32 +335,23 @@ export default function AboutUs() {
 
 
 
-{/* Team section */}
-<div className="w-full px-4 sm:px-8 lg:px-16 py-10 bg-gradient-to-b from-blue-50 to-white">
-  {/* Section Heading */}
-  <div className="mb-12 text-center">
-    <h2 className="text-3xl font-bold text-blue-900 mb-2">Team</h2>
-    <div className="w-24 h-1 bg-blue-800 mx-auto rounded-lg"></div>
+
+
+{/* Section Heading */}
+<div className="w-full px-4 sm:px-8 lg:px-16 py-16 bg-gradient-to-b from-blue-50 to-white">
+  <div className="mb-16 text-center" data-aos="fade-up">
+    <h2 className="text-4xl font-bold text-blue-900 mb-3 relative inline-block">
+      Our Legal Team
+      <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-600 rounded-full"></span>
+    </h2>
+    <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+      Meet our dedicated team of legal professionals committed to delivering exceptional service.
+    </p>
   </div>
 
   {/* Team Members Grid */}
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
     {[
-      {
-        name: "SHI HAULI",
-        title: "Associate Attorney",
-        image: teamImage,
-        email: "ranahuba0@gmail.com",
-        linkedin: "https://www.linkedin.com/in/huba-rana/"
-      },
-
-      {
-        name: "Amber Munoz",
-        title: "Legal Assistant",
-        image: teamImage,
-        email: "ranahuba0@gmail.com",
-        linkedin: "https://www.linkedin.com/in/huba-rana/"
-      },
       
       {
         name: "Aqeel Ahmad Shah",
@@ -270,6 +414,31 @@ export default function AboutUs() {
       </div>
     ))}
   </div>
+
+  {/* CTA Section */}
+    <div className="text-center mt-20" data-aos="fade-up">
+    <div className="bg-white p-8 rounded-xl shadow-lg max-w-4xl mx-auto">
+      <h3 className="text-2xl md:text-3xl font-semibold text-blue-900 mb-4">Ready to work with our expert team?</h3>
+      <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+        Contact us today to schedule a consultation and discuss your legal needs.
+      </p>
+      <div className="flex flex-col sm:flex-row justify-center gap-4">
+        <a 
+          href="/vt-coin" 
+          className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-md hover:shadow-lg"
+        >
+          Schedule a Consultation
+        </a>
+        <a 
+          href="tel:(223) 529-8055" 
+          className="px-6 py-3 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-colors duration-200"
+        >
+          Call Now
+        </a>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 
