@@ -30,8 +30,8 @@ const awardImages = [award1, award2, award3, award4, award5, award6, award7, awa
 export default function AboutUs() {
     return (
         //about main
-        <div className="w-full h-full flex flex-col items-center justify-center gap-8 lg:gap-16">
-    <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
+        <div className="w-full h-full flex flex-col items-center justify-center gap-8 lg:gap-16 mt-[-50px]">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
         <div className="w-full flex flex-col gap-5 ml-4 lg:ml-10">
             <h1 className="text-[24px] sm:text-[30px] lg:text-5xl font-bold tracking-[-1px] lg:tracking-[-2px] font-oswald text-blue-800 ">
                 ABOUT <span className="outlined-text font-bold">US</span>

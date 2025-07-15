@@ -17,10 +17,10 @@ import burger from '../../assets/images/burger.svg';
 import cross from '../../assets/images/cross.svg';
 
 const tabs = [
-    { title: 'Home', to: 'vt' },
-    { title: 'Practice Areas', to: 'competitions' },
+    { title: 'Home', to: 'Home' },
+    { title: 'Practice Areas', to: 'lawyers-lancaster-immigration' },
     { title: 'Team', to: 'aboutus' },
-    { title: 'Contact Us', to: 'vt-coin' },
+    { title: 'Contact Us', to: 'contactus' },
     { title: 'Faq', to: 'Faq' },
 ];
 
