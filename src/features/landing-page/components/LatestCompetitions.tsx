@@ -103,7 +103,7 @@ export default function PracticeAreas() {
                         type="button"
                         variant="primary"
                         extraClasses="px-8 py-3 text-lg font-medium hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center gap-2 mx-auto"
-                        onClick={() => navigate("/competitions")}
+                        onClick={() => navigate("/lawyers-lancaster-immigration")}
                     >
                         Learn More
                         <img src={rightArrow} alt="right" className="w-5 h-5" />

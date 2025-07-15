@@ -424,7 +424,7 @@ export default function AboutUs() {
       </p>
       <div className="flex flex-col sm:flex-row justify-center gap-4">
         <a 
-          href="/vt-coin" 
+          href="/contactus" 
           className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-md hover:shadow-lg"
         >
           Schedule a Consultation

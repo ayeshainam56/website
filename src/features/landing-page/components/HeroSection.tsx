@@ -14,7 +14,7 @@ export default function HeroSection() {
                     <span className="outlined-text font-extrabold">For Your</span>
                     <span className="font-black italic tracking-tight">Immigrations matters</span>
                 </h1>
-                <Button type={"button"} variant={"primary"} extraClasses="max-w-[275px] gap-2.5 items-center" onClick={() => navigate("/vt-coin")}>
+                <Button type={"button"} variant={"primary"} extraClasses="max-w-[275px] gap-2.5 items-center" onClick={() => navigate("/contactus")}>
                     Schedule a Consultation
                     <img src={rightArrow} alt="arrow" />
                 </Button>

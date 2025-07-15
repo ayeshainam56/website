@@ -128,7 +128,7 @@ export default function FAQ() {
                                 <h3 className="text-2xl font-bold mb-2">Still have questions?</h3>
                                 <p className="mb-4">We're here to help clarify any legal concerns you may have.</p>
                                 <a 
-                                    href="/vt-coin" 
+                                    href="/contactus" 
                                     className="inline-block px-6 py-3 bg-white text-blue-900 font-medium rounded-lg hover:bg-blue-100 transition-colors duration-200"
                                 >
                                     Contact Us

@@ -142,7 +142,7 @@ export default function PracticeAreas() {
                     type="button" 
                     variant="primary" 
                     extraClasses="px-10 py-3 text-lg font-medium hover:bg-blue-700 transition-colors flex items-center gap-2"
-                    onClick={() => navigate("/vt-coin")}
+                    onClick={() => navigate("/contactus")}
                 >
                     Schedule a Consultation
                     <img src={rightArrow} alt="arrow" className="w-5" />
