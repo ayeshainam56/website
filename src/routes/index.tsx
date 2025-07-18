@@ -15,7 +15,7 @@ export const AppRoutes = () => {
         <Suspense fallback={<div/>}>
             <Routes>
                 <Route element={<AppLayout/>}>
-                    <Route path="/" element={<LandingPage/>}/>
+                    <Route path="/" element={<LandingPage />} />
                     <Route path="/Home" element={<LandingPage/>}/>
                     <Route path="/lawyers-lancaster-immigration" element={<PracticeAreas/>}/>
                     <Route path="/aboutus" element={<AboutUs/>}/>

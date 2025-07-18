@@ -7,7 +7,8 @@ import bgDoodles from '../../assets/images/bg_doodles_light.svg';
 import firm_logo from '../../assets/images/firm_logo.png';
 
 import award from '../../assets/images/award.svg';
-import twitter from '../../assets/images/twitter.svg';
+import facebook from '../../assets/images/facebook.webp';
+import youtube from '../../assets/images/youtube.webp';
 import insta from '../../assets/images/instagram.svg';
 
 import twitterDark from '../../assets/images/twitter-dark.svg';
@@ -171,10 +172,23 @@ export default function AppLayout() {
                             <span className="cursor-pointer">Privacy policy</span>
                             <span className="cursor-pointer">Cookie Policy</span>
                         </div>
-                        <div className="flex gap-14 sm:gap-7 mt-4 sm:mt-0">
-                            <img src={twitter} alt="twitter" className="cursor-pointer" />
-                            <img src={insta} alt="insta" className="cursor-pointer" />
-                        </div>
+                        <div className="flex gap-6 sm:gap-4 mt-4 sm:mt-0">
+  {/* Facebook */}
+  <a href="https://www.facebook.com/p/Malik-Associates-LLC-61553109312060/" target="_blank" rel="noopener noreferrer">
+    <img src={facebook} alt="facebook" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
+  </a>
+
+  {/* Instagram */}
+  <a href="https://www.instagram.com/malikassociatesllc/" target="_blank" rel="noopener noreferrer">
+    <img src={insta} alt="instagram" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
+  </a>
+
+  {/* YouTube */}
+  <a href="https://www.youtube.com/YOUR_CHANNEL" target="_blank" rel="noopener noreferrer">
+    <img src={youtube} alt="youtube" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
+  </a>
+</div>
+
                     </div>
                 </div>
             </div>
