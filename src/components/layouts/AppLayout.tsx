@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 
-import ReactFlagsSelect from 'react-flags-select';
+
 
 import bgDoodles from '../../assets/images/bg_doodles_light.svg';
 import firm_logo from '../../assets/images/firm_logo.png';
@@ -17,6 +17,7 @@ import instaDark from '../../assets/images/instagram-dark.svg';
 import burger from '../../assets/images/burger.svg';
 import cross from '../../assets/images/cross.svg';
 
+
 const tabs = [
     { title: 'Home', to: 'Home' },
     { title: 'Practice Areas', to: 'lawyers-lancaster-immigration' },
@@ -28,7 +29,7 @@ const tabs = [
 export default function AppLayout() {
     const [openSidebar, setOpenSidebar] = useState(false);
     const navigate = useNavigate();
-    const [selected, setSelected] = useState('GB');
+    
     const location = useLocation();
     const currentPath = location.pathname.split('/')[1];
 
@@ -143,20 +144,6 @@ export default function AppLayout() {
                             })}
                         </div>
 
-                        {/* 🔁 LANGUAGE SWITCHER replaces address */}
-                        <div>
-                                <ReactFlagsSelect
-                                    selected={selected}
-                                    onSelect={(code) => setSelected(code)}
-                                    countries={['GB', 'ES']}
-                                    customLabels={{
-                                        GB: 'English',
-                                        ES: 'Spanish',
-                                    }}
-                                    className="border-0"
-                                    selectButtonClassName="!bg-gradient-to-r from-blue-900 to-blue-500 !border-0 !text-white !rounded-[10px]"
-                                />
-                            </div>
                     </div>
 
                     <div className="pt-5 border-t-2 flex justify-between items-center gap-3.5 flex-col xl:flex-row" style={{ borderColor: 'rgba(3, 57, 138, 0.91)' }}>
