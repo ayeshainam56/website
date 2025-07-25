@@ -24,6 +24,8 @@ const tabs = [
     { title: 'Team', to: 'aboutus' },
     { title: 'Contact Us', to: 'contactus' },
     { title: 'Faq', to: 'Faq' },
+    { title: 'Blog', to: 'blog' },
+    
 ];
 
 export default function AppLayout() {

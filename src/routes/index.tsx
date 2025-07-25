@@ -9,6 +9,7 @@ import AboutUs from "../features/aboutus/routes/about.tsx";
 import FAQ from "../features/faq/routes/Faq.tsx";
 import TermsandCondition from "../features/policy/routes/policy.tsx";
 import ContactUs from "../features/contactus/routes/contactus.tsx";
+import BlogLanding from '../features/blog/routes/blog.tsx';
 
 export const AppRoutes = () => {
     return (
@@ -22,6 +23,7 @@ export const AppRoutes = () => {
                     <Route path="/policy" element={<TermsandCondition/>}/>
                     <Route path="/faq" element={<FAQ/>}/>
                     <Route path="/contactus" element={<ContactUs/>}/>
+                    <Route path="/blog" element={<BlogLanding/>}/>
                     <Route path="*" element={<Navigate to={'/'}/>}/>
                 </Route>
             </Routes>
