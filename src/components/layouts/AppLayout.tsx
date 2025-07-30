@@ -10,6 +10,7 @@ import award from '../../assets/images/award.svg';
 import facebook from '../../assets/images/facebook.webp';
 import youtube from '../../assets/images/youtube.webp';
 import insta from '../../assets/images/instagram.svg';
+import tiktok from '../../assets/images/tiktok.webp';
 
 import twitterDark from '../../assets/images/twitter-dark.svg';
 import instaDark from '../../assets/images/instagram-dark.svg';
@@ -161,22 +162,28 @@ export default function AppLayout() {
                             <span className="cursor-pointer">Privacy policy</span>
                             <span className="cursor-pointer">Cookie Policy</span>
                         </div>
+
                         <div className="flex gap-6 sm:gap-4 mt-4 sm:mt-0">
-  {/* Facebook */}
-  <a href="https://www.facebook.com/p/Malik-Associates-LLC-61553109312060/" target="_blank" rel="noopener noreferrer">
-    <img src={facebook} alt="facebook" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
-  </a>
+                        {/* Facebook */}
+                        <a href="https://www.facebook.com/p/Malik-Associates-LLC-61553109312060/" target="_blank" rel="noopener noreferrer">
+                            <img src={facebook} alt="facebook" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
+                        </a>
 
-  {/* Instagram */}
-  <a href="https://www.instagram.com/malikassociatesllc/" target="_blank" rel="noopener noreferrer">
-    <img src={insta} alt="instagram" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
-  </a>
+                        {/* Instagram */}
+                        <a href="https://www.instagram.com/malikassociatesllc/" target="_blank" rel="noopener noreferrer">
+                            <img src={insta} alt="instagram" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
+                        </a>
 
-  {/* YouTube */}
-  <a href="https://www.youtube.com/YOUR_CHANNEL" target="_blank" rel="noopener noreferrer">
-    <img src={youtube} alt="youtube" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
-  </a>
-</div>
+                        {/* YouTube */}
+                        <a href="https://www.youtube.com/@MalikandAssociates" target="_blank" rel="noopener noreferrer">
+                            <img src={youtube} alt="youtube" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
+                        </a>
+
+                        {/* tiktok */}
+                        <a href="https://www.tiktok.com/@malikandassociates?lang=en" target="_blank" rel="noopener noreferrer">
+                            <img src={tiktok} alt="tiktok" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
+                        </a>
+                        </div>
 
                     </div>
                 </div>
