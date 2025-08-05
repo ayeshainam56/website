@@ -5,7 +5,7 @@ category: "Immigration"
 readTime: "5 min read"
 comments: 12
 featured: true
-image: "src\\assets\\images\\blog2.jpg"
+image: "/blog-image/blog1.jpg"
 ---
 
 Immigration law in the U.S. is complex, but knowing the basics can make a huge difference.  

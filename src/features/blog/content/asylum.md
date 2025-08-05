@@ -5,7 +5,7 @@ category: "Asylum"
 readTime: "8 min read"
 comments: 0
 featured: true
-image: "src/assets/images/blog3.jpg"
+image: "/blog-image/blog3.jpg"
 metaDescription: "2025 guide to ace your U.S. asylum interview with USCIS policy updates, document checklists, and former officer tips. Avoid common denial reasons."
 ---
 
