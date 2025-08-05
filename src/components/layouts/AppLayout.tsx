@@ -184,7 +184,6 @@ export default function AppLayout() {
                             <img src={tiktok} alt="tiktok" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
                         </a>
                         </div>
-
                     </div>
                 </div>
             </div>
