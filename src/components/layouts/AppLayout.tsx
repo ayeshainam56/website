@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 
-
-
 import bgDoodles from '../../assets/images/bg_doodles_light.svg';
 import firm_logo from '../../assets/images/firm_logo.png';
 
@@ -18,7 +16,6 @@ import instaDark from '../../assets/images/instagram-dark.svg';
 import burger from '../../assets/images/burger.svg';
 import cross from '../../assets/images/cross.svg';
 
-
 const tabs = [
     { title: 'Home', to: 'Home' },
     { title: 'Practice Areas', to: 'lawyers-lancaster-immigration' },
@@ -26,7 +23,6 @@ const tabs = [
     { title: 'Contact Us', to: 'contactus' },
     { title: 'Faq', to: 'Faq' },
     { title: 'Blog', to: 'blog' },
-    
 ];
 
 export default function AppLayout() {
@@ -36,11 +32,14 @@ export default function AppLayout() {
     const location = useLocation();
     const currentPath = location.pathname.split('/')[1];
 
-    
     useEffect(() => {
         document.documentElement.classList.remove('dark');
         localStorage.setItem('theme', 'light');
     }, []);
+
+    const handleLinkClick = () => {
+        setOpenSidebar(false);
+    };
 
     return (
         <div className="min-h-screen min-w-screen flex flex-col justify-between dark:bg-blue-950">
@@ -60,6 +59,7 @@ export default function AppLayout() {
                                             to={item.to}
                                             key={item.title}
                                             className={`text-base font-bold tracking-[1px] ${isCurrent ? 'text-blue-300' : 'text-blue-600'}`}
+                                            onClick={handleLinkClick}
                                         >
                                             {item.title.toUpperCase()}
                                         </Link>
@@ -146,7 +146,6 @@ export default function AppLayout() {
                                 );
                             })}
                         </div>
-
                     </div>
 
                     <div className="pt-5 border-t-2 flex justify-between items-center gap-3.5 flex-col xl:flex-row" style={{ borderColor: 'rgba(3, 57, 138, 0.91)' }}>
@@ -164,25 +163,18 @@ export default function AppLayout() {
                         </div>
 
                         <div className="flex gap-6 sm:gap-4 mt-4 sm:mt-0">
-                        {/* Facebook */}
-                        <a href="https://www.facebook.com/p/Malik-Associates-LLC-61553109312060/" target="_blank" rel="noopener noreferrer">
-                            <img src={facebook} alt="facebook" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
-                        </a>
-
-                        {/* Instagram */}
-                        <a href="https://www.instagram.com/malikassociatesllc/" target="_blank" rel="noopener noreferrer">
-                            <img src={insta} alt="instagram" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
-                        </a>
-
-                        {/* YouTube */}
-                        <a href="https://www.youtube.com/@MalikandAssociates" target="_blank" rel="noopener noreferrer">
-                            <img src={youtube} alt="youtube" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
-                        </a>
-
-                        {/* tiktok */}
-                        <a href="https://www.tiktok.com/@malikandassociates?lang=en" target="_blank" rel="noopener noreferrer">
-                            <img src={tiktok} alt="tiktok" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
-                        </a>
+                            <a href="https://www.facebook.com/p/Malik-Associates-LLC-61553109312060/" target="_blank" rel="noopener noreferrer">
+                                <img src={facebook} alt="facebook" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
+                            </a>
+                            <a href="https://www.instagram.com/malikassociatesllc/" target="_blank" rel="noopener noreferrer">
+                                <img src={insta} alt="instagram" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
+                            </a>
+                            <a href="https://www.youtube.com/@MalikandAssociates" target="_blank" rel="noopener noreferrer">
+                                <img src={youtube} alt="youtube" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
+                            </a>
+                            <a href="https://www.tiktok.com/@malikandassociates?lang=en" target="_blank" rel="noopener noreferrer">
+                                <img src={tiktok} alt="tiktok" className="cursor-pointer w-6 h-6 sm:w-5 sm:h-5" />
+                            </a>
                         </div>
                     </div>
                 </div>
