@@ -1,50 +1,47 @@
-# VT Performance
+# Malik and Associates LLC — Website
 
-Welcome to our project's frontend repository! This repository contains all the necessary files and code for the frontend part of our project.
+> Professional, website for Malik and Associates LLC built with Vite, React (TypeScript) and Tailwind CSS.
 
-## Project Overview
+---
 
-This project aims to help the end user purchase our VT tokens and participate in competitions to win real world assets. Our frontend is responsible for providing a smooth user experience and elegant UI.
+## Overview
 
-## Getting Started
+The Malik and Associates LLS website serves as the official online presence for the firm, showcasing its legal expertise, practice areas, attorney profiles, and latest insights. It is designed to be fully responsive, ensuring a seamless browsing experience across devices, with a focus on accessibility, professional presentation, and strong search engine visibility.
 
-To get started with the project, follow these simple steps:
 
-1. **Clone the Repository**: Clone this repository to your local machine using the following command:
+---
 
-```js
-git clone https://github.com/uzair-khalid/VT-Performance-Web.git
-```
+## Quick start (local development)
 
-2. **Install Dependencies**: Navigate to the project directory and install the necessary dependencies by running:
+### Prerequisites
+- Node.js v18+ (LTS recommended)
+- npm (or yarn / pnpm)
+- Git
 
-```js
+### Steps
+```bash
+# 1. clone the repo
+git clone https://github.com/ayeshainam56/website.git
+cd website
+
+# 2. install dependencies
 npm install
-```
+# or: pnpm install
 
-3. **Run the Development Server**: Once the dependencies are installed, start the development server using:
-
-```js
+# 3. run the dev server
 npm run dev
+
+# 4. build for production
+npm run build
 ```
 
-4. **Explore**: You're all set! Explore the project and make any necessary changes.
+# Project structure
 
-## Project Structure
-
-- **`/src`**: This directory contains all the source code for the frontend.
-- **`/libs`**: This library directory contains all the reusable components and utilities.
-- **`package.json`**: This file contains metadata about the project and its dependencies.
-- **`README.md`**: You're reading it right now!
-
-## Collaboration
-
-To collaborate to the project, please follow these steps:
-
-1. Clone the repository.
-2. Create a new branch (`git checkout -b feature/new-feature`).
-3. Make your changes and commit them (`git commit -m 'Add new feature'`).
-4. Push your changes to the branch (`git push origin feature/new-feature`).
-5. Create a new Pull Request.
-
-Thank you for your interest! Happy coding! 🚀
+/ (repo root)
+├─ public/          # static files served as-is (images, favicon, robots.txt)
+├─ src/             # application source (components, pages, styles)
+├─ libs/            # reusable UI components / utilities shared across pages
+├─ index.html       # Vite entry file
+├─ tailwind.config.js
+├─ vite.config.ts
+└─ README.md
