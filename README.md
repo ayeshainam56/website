@@ -34,14 +34,3 @@ npm run dev
 # 4. build for production
 npm run build
 ```
-
-# Project structure
-
-/ (repo root)
-├─ public/          # static files served as-is (images, favicon, robots.txt)
-├─ src/             # application source (components, pages, styles)
-├─ libs/            # reusable UI components / utilities shared across pages
-├─ index.html       # Vite entry file
-├─ tailwind.config.js
-├─ vite.config.ts
-└─ README.md
