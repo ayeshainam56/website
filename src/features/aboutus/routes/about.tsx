@@ -286,7 +286,7 @@ export default function AboutUs() {
         <div className="flex items-start justify-between mb-4">
           <div>
             <h3 className="text-2xl font-bold text-blue-900">Amber Munoz</h3>
-            <p className="text-sm text-blue-600 font-medium">Senior Manager & Paralegal Attorney</p>
+            <p className="text-sm text-blue-600 font-medium">Office Manager & Senior Paralegal</p>
           </div>
           <div className="flex space-x-2">
             <a 
