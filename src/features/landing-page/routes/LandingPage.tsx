@@ -1,5 +1,6 @@
 import HeroSection from "../components/HeroSection.tsx";
 import Stats from "../components/Stats.tsx";
+import ReviewHighlights from "../components/review.tsx";
 //import Guide from "../components/Guide.tsx";
 
 import AboutVT from "../components/AboutVT.tsx";
@@ -14,6 +15,7 @@ export default function LandingPage() {
             {/* <Guide /> */}
             <LatestCompetitions />
             <AboutVT />
+            <ReviewHighlights />
             
         </div>
     );
