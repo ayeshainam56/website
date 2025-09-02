@@ -15,7 +15,7 @@ const faqs = [
     },
     {
         question: "How can I schedule an appointment?",
-        answer: "You can schedule a consultation through our website's contact page, by phone at (555) 123-4567, or by visiting our office during business hours (Mon-Fri, 9AM-5PM).",
+        answer: "You can schedule a consultation through our website's contact page, by phone at +1(223) 529-8055, or by visiting our office during business hours (Mon-Fri, 9AM-5PM).",
         icon: "📅"
     },
     {

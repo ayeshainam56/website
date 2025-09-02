@@ -69,7 +69,7 @@ const ContactUs = () => {
                     <h3 className="text-xl font-bold text-blue-900 mb-3">Get In Touch</h3>
                     <div className="space-y-2 text-gray-700">
                         <p className="font-semibold">Phone:</p>
-                        <p>(223) 529-8055</p>
+                        <p>+1(223) 529-8055</p>
                         <p className="font-semibold mt-4">Email:</p>
                         <a href="mailto:malikassociatesllc6@gmail.com" className="text-blue-600 hover:underline">
                             malikassociatesllc6@gmail.com
