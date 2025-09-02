@@ -76,16 +76,16 @@ const practiceAreas = [
 
 const successStories = [
     {
-        title: "Asylum Granted After Years of Fear",
-        content: "Our client, a political activist, received asylum after a well-documented application and court representation. They're now thriving in the U.S. with their family."
+        title: "Asylum Success Story",
+        content: "A man fleeing tribal persecution and honor-based threats found safety through asylum. Despite repeated dangers and no state protection, strong evidence proved his case. With Malik & Associates’ help, he is now rebuilding his life and future in safety."
     },
     {
-        title: "Green Card Through Marriage Approved",
-        content: "We successfully helped a couple prove their marriage was genuine. The client received their green card within 8 months after navigating a challenging RFE."
+        title: "VAWA Success Story",
+        content: "An immigrant spouse endured severe abuse and threats of deportation. With courage, he applied under VAWA. Malik & Associates guided him toward protection and a better, independent future."
     },
     {
-        title: "Dreamer Finds Stability With DACA",
-        content: "A young DREAMer client renewed their DACA and obtained Advance Parole to visit a sick parent abroad — safely returning to continue work and studies."
+        title: "Asylum Success Story",
+        content: "A converted Shia Muslim sought asylum in the U.S. after facing serious threats in Pakistan. USCIS recognized the evidence of his fear and granted him protection. With Malik & Associates’ support, he is now safely reunited with his family in the United States."
     }
 ];
 
