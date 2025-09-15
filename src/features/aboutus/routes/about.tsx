@@ -9,7 +9,7 @@ import aboutproblem from "../../../assets/images/justice.png";
 import aboutarrow from "../../../assets/images/aboutarrow.svg";
 import abouttrophy from "../../../assets/images/abouttrpohy.svg";
 import abouttech from "../../../assets/images/waqar.jpg";
-import teamImage from "../../../assets/images/teamImage.svg";
+import teamImage from "../../../assets/images/teamem.jpg";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import award1 from '../../../assets/images/client-1.png';
@@ -381,13 +381,7 @@ export default function AboutUs() {
         email: "amber@example.com",
         linkedin: "https://linkedin.com/in/amber"
       },
-      {
-        name: "Huba Rana",
-        title: "Legal Assistant",
-        image: teamImage,
-        email: "ranahuba0@gmail.com",
-        linkedin: "https://www.linkedin.com/in/huba-rana/"
-      },
+      
 
       
       
