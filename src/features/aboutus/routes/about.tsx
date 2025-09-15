@@ -360,13 +360,7 @@ export default function AboutUs() {
         email: "aqeelshah450@gmail.com",
         linkedin: "https://linkedin.com/in/aqeel-shah"
       },
-      {
-        name: "Ahmad Jamal Abbasi",
-        title: "Legal Associate",
-        image: teamImage,
-        email: "Ahmadjamalabbasi@gmail.com",
-        linkedin: "https://www.linkedin.com/in/ahmad-j-abbasi-3127ab169?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
-      },
+      
       {
         name: "Ayesha Inam",
         title: "Legal Assistant & Technical Advisor",
@@ -380,6 +374,13 @@ export default function AboutUs() {
         image: teamImage,
         email: "amber@example.com",
         linkedin: "https://linkedin.com/in/amber"
+      },
+      {
+        name: "Ahmad Jamal Abbasi",
+        title: "Legal Associate",
+        image: teamImage,
+        email: "Ahmadjamalabbasi@gmail.com",
+        linkedin: "https://www.linkedin.com/in/ahmad-j-abbasi-3127ab169?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
       },
       
 
