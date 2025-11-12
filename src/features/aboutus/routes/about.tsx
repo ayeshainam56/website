@@ -376,11 +376,11 @@ export default function AboutUs() {
         linkedin: "https://linkedin.com/in/amber"
       },
       {
-        name: "Ahmad Jamal Abbasi",
-        title: "Legal Associate",
+        name: "Madiha Azam",
+        title: "Legal Assistant",
         image: teamImage,
-        email: "Ahmadjamalabbasi@gmail.com",
-        linkedin: "https://www.linkedin.com/in/ahmad-j-abbasi-3127ab169?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+        email: "",
+        linkedin: ""
       },
       
 
