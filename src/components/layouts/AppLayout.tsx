@@ -156,10 +156,9 @@ export default function AppLayout() {
                         <span className="text-white text-sm font-normal">© 2025 All Rights Reserved</span>
                         <div className="text-white flex gap-4 text-sm font-bold flex-col items-center sm:flex-row">
                             <Link to="/policy">
-                                <span className="cursor-pointer">Terms & Conditions</span>
+                                <span className="cursor-pointer">Privacy & Terms</span>
                             </Link>
-                            <span className="cursor-pointer">Privacy policy</span>
-                            <span className="cursor-pointer">Cookie Policy</span>
+                            
                         </div>
 
                         <div className="flex gap-6 sm:gap-4 mt-4 sm:mt-0">
